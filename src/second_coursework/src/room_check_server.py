@@ -5,43 +5,55 @@ import actionlib
 from second_coursework.msg import RoomCheckAction, RoomCheckResult
 from second_coursework.srv import MoveRobotResponse, MoveRobot, MoveRobotRequest
 from sensor_msgs.msg import Image
+from std_msgs.msg import String
 import smach
 import smach_ros
-from yolov4 import Detector
-import cv2
-from cv_bridge import CvBridge
 from math import pi
 from geometry_msgs.msg import Twist
 
 rospy.init_node('room_check_server')
-num_of_checks = 4
+tts = rospy.Publisher('/tts/phrase', String)
+str_msg = String()
+num_of_checks = 0
 is_next_room_A = False
+rule_breaks = []
 
-class DetectionState(smach.State):
-    def __init__(self):
-        smach.State.__init__(self, outcomes=['finished'])
-        self.camera = rospy.Subscriber('/camera/image', Image, self.img_callback)
-        self.cv_image = None
-        self.detected_objects = None
-        self.bridge = CvBridge()
-        self.detector = Detector(gpu_id=0, config_path='/opt/darknet/cfg/yolov4.cfg',
-                                 weights_path='/opt/darknet/yolov4.weights',
-                                 lib_darknet_path='/opt/darknet/libdarknet.so',
-                                 meta_path='/home/rm/darknet/build/darknet/x64/data/coco.data')
+'''
+TASKS TO DO:
+- Make sure YOLO works
+- Finish off the Detection State
+- Work out how to link up the userdata stuff
+- Text to speech in the right places - when rule break detected
+- Add Detection State into Concurrence
+'''
 
-    def execute(self, ud):
 
-        return 'finished'
-
-    def img_callback(self, msg):
-        self.cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='passthrough')
-        self.detected_objects = self.detector(self.cv_image)
-
-    def yolo_services(self, request):
-        if not self.cv_image:
-            return False
-
-        return True
+# class DetectionState(smach.State):
+#     def __init__(self):
+#         smach.State.__init__(self, outcomes=['finished'])
+#         self.camera = rospy.Subscriber('/camera/image', Image, self.img_callback)
+#         self.cv_image = None
+#         self.detected_objects = None
+#         self.bridge = CvBridge()
+#         self.detector = Detector(gpu_id=0, config_path='/opt/darknet/cfg/yolov4.cfg',
+#                                  weights_path='/opt/darknet/yolov4.weights',
+#                                  lib_darknet_path='/opt/darknet/libdarknet.so',
+#                                  meta_path='/home/rm/darknet/build/darknet/x64/data/coco.data')
+#
+#     def execute(self, ud):
+#
+#         return 'finished'
+#
+#     def img_callback(self, msg):
+#         self.cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='passthrough')
+#         self.detected_objects = self.detector(self.cv_image)
+#
+#     def yolo_services(self, request):
+#         if not self.cv_image:
+#             return False
+#
+#         return True
+#
 
 class RoomCheckServer:
     def __init__(self):
@@ -52,12 +64,9 @@ class RoomCheckServer:
         self.server.start()
 
     def execute(self, goal):
-        rospy.loginfo('Starting states')
         states_result = sm.execute()
-        rospy.loginfo('Got Results from State Machine')
         result = RoomCheckResult()
-        # result.rule_break_count = states_result
-        result.rule_break_count = [0,0]
+        result.rule_break_count = rule_breaks
         self.server.set_succeeded(result)
 
 class DoLogicState(smach.State):
@@ -68,6 +77,8 @@ class DoLogicState(smach.State):
         self.is_next_room_A = False
 
     def execute(self, userdata):
+        str_msg.data = "I am doing logic"
+        tts.publish(str_msg)
         if self.checks_left > 0:
             if rospy.get_time() - self.elapse_time_start > 45:
                 self.elapse_time_start = rospy.get_time()
@@ -81,6 +92,8 @@ class DoLogicState(smach.State):
                     self.is_next_room_A = True
                     return 'room_B'
         else:
+            rule_breaks.append(2)
+            rule_breaks.append(4)
             return 'finished'
 
 class Turn(smach.State):
@@ -131,7 +144,7 @@ with sm:
                            )
     with cc_regular:
         smach.Concurrence.add('TURN', Turn(30))
-        smach.Concurrence.add('DETECT_IMAGE', DetectionState())
+        # smach.Concurrence.add('DETECT_IMAGE', DetectionState())
 
 
     cc_room_D = smach.Concurrence(outcomes=['finished'],
