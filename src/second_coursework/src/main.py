@@ -16,7 +16,7 @@ def move_to_room_A():
 num_of_checks = rospy.get_param("/ncounts") #Gets the number of checks to do from params
 # Initialise node and move the room A
 rospy.init_node('main')
-move_to_room_A()
+# move_to_room_A()
 
 
 # Creating an action client and sending a goal for the number of checks that it will do

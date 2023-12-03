@@ -80,16 +80,17 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
 
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -100,6 +101,17 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -122,18 +134,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -183,49 +183,19 @@ _second_coursework_generate_messages_check_deps_RoomCheckGoal/fast:
 .PHONY : _second_coursework_generate_messages_check_deps_RoomCheckGoal/fast
 
 # Convenience name for target.
-second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/rule:
-	cd /home/rm/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/rule
-.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/rule
+second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/rule:
+	cd /home/rm/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/rule
+.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/rule
 
 # Convenience name for target.
-_second_coursework_generate_messages_check_deps_RoomCheckActionGoal: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/rule
+_second_coursework_generate_messages_check_deps_YOLODetection: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/rule
 
-.PHONY : _second_coursework_generate_messages_check_deps_RoomCheckActionGoal
+.PHONY : _second_coursework_generate_messages_check_deps_YOLODetection
 
 # fast build rule for target.
-_second_coursework_generate_messages_check_deps_RoomCheckActionGoal/fast:
-	cd /home/rm/ros_ws/build && $(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/build
-.PHONY : _second_coursework_generate_messages_check_deps_RoomCheckActionGoal/fast
-
-# Convenience name for target.
-second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/rule:
-	cd /home/rm/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/rule
-.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/rule
-
-# Convenience name for target.
-_second_coursework_generate_messages_check_deps_RoomCheckFeedback: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/rule
-
-.PHONY : _second_coursework_generate_messages_check_deps_RoomCheckFeedback
-
-# fast build rule for target.
-_second_coursework_generate_messages_check_deps_RoomCheckFeedback/fast:
-	cd /home/rm/ros_ws/build && $(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/build
-.PHONY : _second_coursework_generate_messages_check_deps_RoomCheckFeedback/fast
-
-# Convenience name for target.
-second_coursework/CMakeFiles/second_coursework_gencpp.dir/rule:
-	cd /home/rm/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/second_coursework_gencpp.dir/rule
-.PHONY : second_coursework/CMakeFiles/second_coursework_gencpp.dir/rule
-
-# Convenience name for target.
-second_coursework_gencpp: second_coursework/CMakeFiles/second_coursework_gencpp.dir/rule
-
-.PHONY : second_coursework_gencpp
-
-# fast build rule for target.
-second_coursework_gencpp/fast:
-	cd /home/rm/ros_ws/build && $(MAKE) -f second_coursework/CMakeFiles/second_coursework_gencpp.dir/build.make second_coursework/CMakeFiles/second_coursework_gencpp.dir/build
-.PHONY : second_coursework_gencpp/fast
+_second_coursework_generate_messages_check_deps_YOLODetection/fast:
+	cd /home/rm/ros_ws/build && $(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/build
+.PHONY : _second_coursework_generate_messages_check_deps_YOLODetection/fast
 
 # Convenience name for target.
 second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckAction.dir/rule:
@@ -393,6 +363,66 @@ second_coursework_generate_messages_py/fast:
 .PHONY : second_coursework_generate_messages_py/fast
 
 # Convenience name for target.
+second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/rule:
+	cd /home/rm/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/rule
+.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/rule
+
+# Convenience name for target.
+_second_coursework_generate_messages_check_deps_RoomCheckFeedback: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/rule
+
+.PHONY : _second_coursework_generate_messages_check_deps_RoomCheckFeedback
+
+# fast build rule for target.
+_second_coursework_generate_messages_check_deps_RoomCheckFeedback/fast:
+	cd /home/rm/ros_ws/build && $(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/build
+.PHONY : _second_coursework_generate_messages_check_deps_RoomCheckFeedback/fast
+
+# Convenience name for target.
+second_coursework/CMakeFiles/second_coursework_gencpp.dir/rule:
+	cd /home/rm/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/second_coursework_gencpp.dir/rule
+.PHONY : second_coursework/CMakeFiles/second_coursework_gencpp.dir/rule
+
+# Convenience name for target.
+second_coursework_gencpp: second_coursework/CMakeFiles/second_coursework_gencpp.dir/rule
+
+.PHONY : second_coursework_gencpp
+
+# fast build rule for target.
+second_coursework_gencpp/fast:
+	cd /home/rm/ros_ws/build && $(MAKE) -f second_coursework/CMakeFiles/second_coursework_gencpp.dir/build.make second_coursework/CMakeFiles/second_coursework_gencpp.dir/build
+.PHONY : second_coursework_gencpp/fast
+
+# Convenience name for target.
+second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/rule:
+	cd /home/rm/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/rule
+.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/rule
+
+# Convenience name for target.
+_second_coursework_generate_messages_check_deps_RoomCheckActionGoal: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/rule
+
+.PHONY : _second_coursework_generate_messages_check_deps_RoomCheckActionGoal
+
+# fast build rule for target.
+_second_coursework_generate_messages_check_deps_RoomCheckActionGoal/fast:
+	cd /home/rm/ros_ws/build && $(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/build
+.PHONY : _second_coursework_generate_messages_check_deps_RoomCheckActionGoal/fast
+
+# Convenience name for target.
+second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/rule:
+	cd /home/rm/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/rule
+.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/rule
+
+# Convenience name for target.
+_second_coursework_generate_messages_check_deps_YOLOLastFrame: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/rule
+
+.PHONY : _second_coursework_generate_messages_check_deps_YOLOLastFrame
+
+# fast build rule for target.
+_second_coursework_generate_messages_check_deps_YOLOLastFrame/fast:
+	cd /home/rm/ros_ws/build && $(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/build
+.PHONY : _second_coursework_generate_messages_check_deps_YOLOLastFrame/fast
+
+# Convenience name for target.
 second_coursework/CMakeFiles/second_coursework_geneus.dir/rule:
 	cd /home/rm/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/second_coursework_geneus.dir/rule
 .PHONY : second_coursework/CMakeFiles/second_coursework_geneus.dir/rule
@@ -535,10 +565,10 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
+	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... _second_coursework_generate_messages_check_deps_RoomCheckGoal"
-	@echo "... _second_coursework_generate_messages_check_deps_RoomCheckActionGoal"
-	@echo "... _second_coursework_generate_messages_check_deps_RoomCheckFeedback"
-	@echo "... second_coursework_gencpp"
+	@echo "... _second_coursework_generate_messages_check_deps_YOLODetection"
 	@echo "... _second_coursework_generate_messages_check_deps_RoomCheckAction"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... actionlib_msgs_generate_messages_lisp"
@@ -551,7 +581,10 @@ help:
 	@echo "... second_coursework_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... second_coursework_generate_messages_py"
-	@echo "... list_install_components"
+	@echo "... _second_coursework_generate_messages_check_deps_RoomCheckFeedback"
+	@echo "... second_coursework_gencpp"
+	@echo "... _second_coursework_generate_messages_check_deps_RoomCheckActionGoal"
+	@echo "... _second_coursework_generate_messages_check_deps_YOLOLastFrame"
 	@echo "... second_coursework_geneus"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... second_coursework_generate_messages_nodejs"
@@ -563,7 +596,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... second_coursework_generate_messages_eus"
 	@echo "... rebuild_cache"
-	@echo "... install"
 .PHONY : help
 
 

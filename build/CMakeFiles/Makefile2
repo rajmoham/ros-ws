@@ -285,9 +285,7 @@ second_coursework/preinstall:
 
 # Recursive "clean" directory target.
 second_coursework/clean: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckGoal.dir/clean
-second_coursework/clean: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/clean
-second_coursework/clean: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/clean
-second_coursework/clean: second_coursework/CMakeFiles/second_coursework_gencpp.dir/clean
+second_coursework/clean: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/clean
 second_coursework/clean: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckAction.dir/clean
 second_coursework/clean: second_coursework/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean
 second_coursework/clean: second_coursework/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
@@ -299,6 +297,10 @@ second_coursework/clean: second_coursework/CMakeFiles/second_coursework_generate
 second_coursework/clean: second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/clean
 second_coursework/clean: second_coursework/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean
 second_coursework/clean: second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/clean
+second_coursework/clean: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/clean
+second_coursework/clean: second_coursework/CMakeFiles/second_coursework_gencpp.dir/clean
+second_coursework/clean: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/clean
+second_coursework/clean: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/clean
 second_coursework/clean: second_coursework/CMakeFiles/second_coursework_geneus.dir/clean
 second_coursework/clean: second_coursework/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
 second_coursework/clean: second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/clean
@@ -1546,85 +1548,31 @@ second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_Roo
 .PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckGoal.dir/clean
 
 #=============================================================================
-# Target rules for target second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir
+# Target rules for target second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir
 
 # All Build rule for target.
-second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/all:
-	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/depend
-	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rm/ros_ws/build/CMakeFiles --progress-num= "Built target _second_coursework_generate_messages_check_deps_RoomCheckActionGoal"
-.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/all
+second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/all:
+	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/depend
+	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rm/ros_ws/build/CMakeFiles --progress-num= "Built target _second_coursework_generate_messages_check_deps_YOLODetection"
+.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/all
 
 # Build rule for subdir invocation for target.
-second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/rule: cmake_check_build_system
+second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 0
-.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/rule
+.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/rule
 
 # Convenience name for target.
-_second_coursework_generate_messages_check_deps_RoomCheckActionGoal: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/rule
+_second_coursework_generate_messages_check_deps_YOLODetection: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/rule
 
-.PHONY : _second_coursework_generate_messages_check_deps_RoomCheckActionGoal
-
-# clean rule for target.
-second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/clean:
-	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/clean
-.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/clean
-
-#=============================================================================
-# Target rules for target second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir
-
-# All Build rule for target.
-second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/all:
-	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/depend
-	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rm/ros_ws/build/CMakeFiles --progress-num= "Built target _second_coursework_generate_messages_check_deps_RoomCheckFeedback"
-.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/all
-
-# Build rule for subdir invocation for target.
-second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 0
-.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/rule
-
-# Convenience name for target.
-_second_coursework_generate_messages_check_deps_RoomCheckFeedback: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/rule
-
-.PHONY : _second_coursework_generate_messages_check_deps_RoomCheckFeedback
+.PHONY : _second_coursework_generate_messages_check_deps_YOLODetection
 
 # clean rule for target.
-second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/clean:
-	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/clean
-.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/clean
-
-#=============================================================================
-# Target rules for target second_coursework/CMakeFiles/second_coursework_gencpp.dir
-
-# All Build rule for target.
-second_coursework/CMakeFiles/second_coursework_gencpp.dir/all: second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/all
-	$(MAKE) -f second_coursework/CMakeFiles/second_coursework_gencpp.dir/build.make second_coursework/CMakeFiles/second_coursework_gencpp.dir/depend
-	$(MAKE) -f second_coursework/CMakeFiles/second_coursework_gencpp.dir/build.make second_coursework/CMakeFiles/second_coursework_gencpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rm/ros_ws/build/CMakeFiles --progress-num= "Built target second_coursework_gencpp"
-.PHONY : second_coursework/CMakeFiles/second_coursework_gencpp.dir/all
-
-# Build rule for subdir invocation for target.
-second_coursework/CMakeFiles/second_coursework_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 8
-	$(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/second_coursework_gencpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 0
-.PHONY : second_coursework/CMakeFiles/second_coursework_gencpp.dir/rule
-
-# Convenience name for target.
-second_coursework_gencpp: second_coursework/CMakeFiles/second_coursework_gencpp.dir/rule
-
-.PHONY : second_coursework_gencpp
-
-# clean rule for target.
-second_coursework/CMakeFiles/second_coursework_gencpp.dir/clean:
-	$(MAKE) -f second_coursework/CMakeFiles/second_coursework_gencpp.dir/build.make second_coursework/CMakeFiles/second_coursework_gencpp.dir/clean
-.PHONY : second_coursework/CMakeFiles/second_coursework_gencpp.dir/clean
+second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/clean:
+	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/clean
+.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/clean
 
 #=============================================================================
 # Target rules for target second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckAction.dir
@@ -1746,7 +1694,7 @@ second_coursework/CMakeFiles/second_coursework_genlisp.dir/all: second_coursewor
 
 # Build rule for subdir invocation for target.
 second_coursework/CMakeFiles/second_coursework_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/second_coursework_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 0
 .PHONY : second_coursework/CMakeFiles/second_coursework_genlisp.dir/rule
@@ -1831,7 +1779,7 @@ second_coursework/CMakeFiles/second_coursework_generate_messages.dir/all: second
 
 # Build rule for subdir invocation for target.
 second_coursework/CMakeFiles/second_coursework_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 43
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 53
 	$(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/second_coursework_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 0
 .PHONY : second_coursework/CMakeFiles/second_coursework_generate_messages.dir/rule
@@ -1853,22 +1801,24 @@ second_coursework/CMakeFiles/second_coursework_generate_messages.dir/clean:
 second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/all: archives/first_coursework/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/all: archives/first_coursework/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckGoal.dir/all
-second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/all
-second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/all
+second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckAction.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionResult.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionFeedback.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/all: second_coursework/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/all
+second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/all
+second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckResult.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_MoveRobot.dir/all
 	$(MAKE) -f second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/build.make second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/depend
 	$(MAKE) -f second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/build.make second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rm/ros_ws/build/CMakeFiles --progress-num=23,24,25,26,27,28,29,30 "Built target second_coursework_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rm/ros_ws/build/CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31,32 "Built target second_coursework_generate_messages_cpp"
 .PHONY : second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 0
 .PHONY : second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/rule
@@ -1917,22 +1867,24 @@ second_coursework/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean:
 second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/all: archives/first_coursework/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/all: archives/first_coursework/CMakeFiles/std_msgs_generate_messages_py.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckGoal.dir/all
-second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/all
-second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/all
+second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckAction.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionResult.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionFeedback.dir/all
+second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/all
+second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/all
+second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/all: second_coursework/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckResult.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_MoveRobot.dir/all
 	$(MAKE) -f second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/build.make second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/depend
 	$(MAKE) -f second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/build.make second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rm/ros_ws/build/CMakeFiles --progress-num=56,57,58,59,60,61,62,63,64,65 "Built target second_coursework_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rm/ros_ws/build/CMakeFiles --progress-num=64,65,66,67,68,69,70,71,72,73,74,75 "Built target second_coursework_generate_messages_py"
 .PHONY : second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 0
 .PHONY : second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/rule
@@ -1948,6 +1900,114 @@ second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/clean:
 .PHONY : second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/clean
 
 #=============================================================================
+# Target rules for target second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir
+
+# All Build rule for target.
+second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/all:
+	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/depend
+	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rm/ros_ws/build/CMakeFiles --progress-num= "Built target _second_coursework_generate_messages_check_deps_RoomCheckFeedback"
+.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/all
+
+# Build rule for subdir invocation for target.
+second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 0
+.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/rule
+
+# Convenience name for target.
+_second_coursework_generate_messages_check_deps_RoomCheckFeedback: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/rule
+
+.PHONY : _second_coursework_generate_messages_check_deps_RoomCheckFeedback
+
+# clean rule for target.
+second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/clean:
+	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/clean
+.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/clean
+
+#=============================================================================
+# Target rules for target second_coursework/CMakeFiles/second_coursework_gencpp.dir
+
+# All Build rule for target.
+second_coursework/CMakeFiles/second_coursework_gencpp.dir/all: second_coursework/CMakeFiles/second_coursework_generate_messages_cpp.dir/all
+	$(MAKE) -f second_coursework/CMakeFiles/second_coursework_gencpp.dir/build.make second_coursework/CMakeFiles/second_coursework_gencpp.dir/depend
+	$(MAKE) -f second_coursework/CMakeFiles/second_coursework_gencpp.dir/build.make second_coursework/CMakeFiles/second_coursework_gencpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rm/ros_ws/build/CMakeFiles --progress-num= "Built target second_coursework_gencpp"
+.PHONY : second_coursework/CMakeFiles/second_coursework_gencpp.dir/all
+
+# Build rule for subdir invocation for target.
+second_coursework/CMakeFiles/second_coursework_gencpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/second_coursework_gencpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 0
+.PHONY : second_coursework/CMakeFiles/second_coursework_gencpp.dir/rule
+
+# Convenience name for target.
+second_coursework_gencpp: second_coursework/CMakeFiles/second_coursework_gencpp.dir/rule
+
+.PHONY : second_coursework_gencpp
+
+# clean rule for target.
+second_coursework/CMakeFiles/second_coursework_gencpp.dir/clean:
+	$(MAKE) -f second_coursework/CMakeFiles/second_coursework_gencpp.dir/build.make second_coursework/CMakeFiles/second_coursework_gencpp.dir/clean
+.PHONY : second_coursework/CMakeFiles/second_coursework_gencpp.dir/clean
+
+#=============================================================================
+# Target rules for target second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir
+
+# All Build rule for target.
+second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/all:
+	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/depend
+	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rm/ros_ws/build/CMakeFiles --progress-num= "Built target _second_coursework_generate_messages_check_deps_RoomCheckActionGoal"
+.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/all
+
+# Build rule for subdir invocation for target.
+second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 0
+.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/rule
+
+# Convenience name for target.
+_second_coursework_generate_messages_check_deps_RoomCheckActionGoal: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/rule
+
+.PHONY : _second_coursework_generate_messages_check_deps_RoomCheckActionGoal
+
+# clean rule for target.
+second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/clean:
+	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/clean
+.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/clean
+
+#=============================================================================
+# Target rules for target second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir
+
+# All Build rule for target.
+second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/all:
+	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/depend
+	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rm/ros_ws/build/CMakeFiles --progress-num= "Built target _second_coursework_generate_messages_check_deps_YOLOLastFrame"
+.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/all
+
+# Build rule for subdir invocation for target.
+second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 0
+.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/rule
+
+# Convenience name for target.
+_second_coursework_generate_messages_check_deps_YOLOLastFrame: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/rule
+
+.PHONY : _second_coursework_generate_messages_check_deps_YOLOLastFrame
+
+# clean rule for target.
+second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/clean:
+	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/clean
+.PHONY : second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/clean
+
+#=============================================================================
 # Target rules for target second_coursework/CMakeFiles/second_coursework_geneus.dir
 
 # All Build rule for target.
@@ -1959,7 +2019,7 @@ second_coursework/CMakeFiles/second_coursework_geneus.dir/all: second_coursework
 
 # Build rule for subdir invocation for target.
 second_coursework/CMakeFiles/second_coursework_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/second_coursework_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 0
 .PHONY : second_coursework/CMakeFiles/second_coursework_geneus.dir/rule
@@ -2008,22 +2068,24 @@ second_coursework/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean:
 second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/all: archives/first_coursework/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/all: archives/first_coursework/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckGoal.dir/all
-second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/all
-second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/all
+second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckAction.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/all: second_coursework/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionResult.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionFeedback.dir/all
+second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/all
+second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/all
+second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckResult.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_MoveRobot.dir/all
 	$(MAKE) -f second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/build.make second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/depend
 	$(MAKE) -f second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/build.make second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rm/ros_ws/build/CMakeFiles --progress-num=48,49,50,51,52,53,54,55 "Built target second_coursework_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rm/ros_ws/build/CMakeFiles --progress-num=54,55,56,57,58,59,60,61,62,63 "Built target second_coursework_generate_messages_nodejs"
 .PHONY : second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 0
 .PHONY : second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/rule
@@ -2045,22 +2107,24 @@ second_coursework/CMakeFiles/second_coursework_generate_messages_nodejs.dir/clea
 second_coursework/CMakeFiles/second_coursework_generate_messages_lisp.dir/all: archives/first_coursework/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_lisp.dir/all: archives/first_coursework/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_lisp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckGoal.dir/all
-second_coursework/CMakeFiles/second_coursework_generate_messages_lisp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/all
-second_coursework/CMakeFiles/second_coursework_generate_messages_lisp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/all
+second_coursework/CMakeFiles/second_coursework_generate_messages_lisp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_lisp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckAction.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_lisp.dir/all: second_coursework/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_lisp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionResult.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_lisp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionFeedback.dir/all
+second_coursework/CMakeFiles/second_coursework_generate_messages_lisp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/all
+second_coursework/CMakeFiles/second_coursework_generate_messages_lisp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/all
+second_coursework/CMakeFiles/second_coursework_generate_messages_lisp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_lisp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckResult.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_lisp.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_MoveRobot.dir/all
 	$(MAKE) -f second_coursework/CMakeFiles/second_coursework_generate_messages_lisp.dir/build.make second_coursework/CMakeFiles/second_coursework_generate_messages_lisp.dir/depend
 	$(MAKE) -f second_coursework/CMakeFiles/second_coursework_generate_messages_lisp.dir/build.make second_coursework/CMakeFiles/second_coursework_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rm/ros_ws/build/CMakeFiles --progress-num=40,41,42,43,44,45,46,47 "Built target second_coursework_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rm/ros_ws/build/CMakeFiles --progress-num=44,45,46,47,48,49,50,51,52,53 "Built target second_coursework_generate_messages_lisp"
 .PHONY : second_coursework/CMakeFiles/second_coursework_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 second_coursework/CMakeFiles/second_coursework_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/second_coursework_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 0
 .PHONY : second_coursework/CMakeFiles/second_coursework_generate_messages_lisp.dir/rule
@@ -2114,7 +2178,7 @@ second_coursework/CMakeFiles/second_coursework_gennodejs.dir/all: second_coursew
 
 # Build rule for subdir invocation for target.
 second_coursework/CMakeFiles/second_coursework_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/second_coursework_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 0
 .PHONY : second_coursework/CMakeFiles/second_coursework_gennodejs.dir/rule
@@ -2168,7 +2232,7 @@ second_coursework/CMakeFiles/second_coursework_genpy.dir/all: second_coursework/
 
 # Build rule for subdir invocation for target.
 second_coursework/CMakeFiles/second_coursework_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/second_coursework_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 0
 .PHONY : second_coursework/CMakeFiles/second_coursework_genpy.dir/rule
@@ -2190,22 +2254,24 @@ second_coursework/CMakeFiles/second_coursework_genpy.dir/clean:
 second_coursework/CMakeFiles/second_coursework_generate_messages_eus.dir/all: archives/first_coursework/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_eus.dir/all: archives/first_coursework/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_eus.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckGoal.dir/all
-second_coursework/CMakeFiles/second_coursework_generate_messages_eus.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/all
-second_coursework/CMakeFiles/second_coursework_generate_messages_eus.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/all
+second_coursework/CMakeFiles/second_coursework_generate_messages_eus.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_eus.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckAction.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_eus.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionResult.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_eus.dir/all: second_coursework/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_eus.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionFeedback.dir/all
+second_coursework/CMakeFiles/second_coursework_generate_messages_eus.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/all
+second_coursework/CMakeFiles/second_coursework_generate_messages_eus.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/all
+second_coursework/CMakeFiles/second_coursework_generate_messages_eus.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_eus.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckResult.dir/all
 second_coursework/CMakeFiles/second_coursework_generate_messages_eus.dir/all: second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_MoveRobot.dir/all
 	$(MAKE) -f second_coursework/CMakeFiles/second_coursework_generate_messages_eus.dir/build.make second_coursework/CMakeFiles/second_coursework_generate_messages_eus.dir/depend
 	$(MAKE) -f second_coursework/CMakeFiles/second_coursework_generate_messages_eus.dir/build.make second_coursework/CMakeFiles/second_coursework_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rm/ros_ws/build/CMakeFiles --progress-num=31,32,33,34,35,36,37,38,39 "Built target second_coursework_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rm/ros_ws/build/CMakeFiles --progress-num=33,34,35,36,37,38,39,40,41,42,43 "Built target second_coursework_generate_messages_eus"
 .PHONY : second_coursework/CMakeFiles/second_coursework_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 second_coursework/CMakeFiles/second_coursework_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 second_coursework/CMakeFiles/second_coursework_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rm/ros_ws/build/CMakeFiles 0
 .PHONY : second_coursework/CMakeFiles/second_coursework_generate_messages_eus.dir/rule

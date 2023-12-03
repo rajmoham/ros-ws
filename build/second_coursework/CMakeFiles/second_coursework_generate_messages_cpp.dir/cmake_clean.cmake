@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "/home/rm/ros_ws/devel/include/second_coursework/RoomCheckFeedback.h"
   "/home/rm/ros_ws/devel/include/second_coursework/RoomCheckGoal.h"
   "/home/rm/ros_ws/devel/include/second_coursework/RoomCheckResult.h"
+  "/home/rm/ros_ws/devel/include/second_coursework/YOLODetection.h"
+  "/home/rm/ros_ws/devel/include/second_coursework/YOLOLastFrame.h"
   "CMakeFiles/second_coursework_generate_messages_cpp"
 )
 

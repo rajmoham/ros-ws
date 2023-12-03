@@ -7,7 +7,9 @@ file(REMOVE_RECURSE
   "/home/rm/ros_ws/devel/share/roseus/ros/second_coursework/msg/RoomCheckFeedback.l"
   "/home/rm/ros_ws/devel/share/roseus/ros/second_coursework/msg/RoomCheckGoal.l"
   "/home/rm/ros_ws/devel/share/roseus/ros/second_coursework/msg/RoomCheckResult.l"
+  "/home/rm/ros_ws/devel/share/roseus/ros/second_coursework/msg/YOLODetection.l"
   "/home/rm/ros_ws/devel/share/roseus/ros/second_coursework/srv/MoveRobot.l"
+  "/home/rm/ros_ws/devel/share/roseus/ros/second_coursework/srv/YOLOLastFrame.l"
   "CMakeFiles/second_coursework_generate_messages_eus"
 )
 

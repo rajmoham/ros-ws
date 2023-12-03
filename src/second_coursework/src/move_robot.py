@@ -27,7 +27,7 @@ def move_base_setup():
     
 def set_room(req: MoveRobotRequest):
     room = req.room
-    rospy.loginfo('Callback:    Moving to Room ' + req.room)
+    rospy.loginfo('Callback: Moving to Room ' + req.room)
     x_pos, y_pos = room_position[room]
 
     move_base_setup()

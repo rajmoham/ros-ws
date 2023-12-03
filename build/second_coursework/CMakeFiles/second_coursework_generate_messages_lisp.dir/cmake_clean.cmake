@@ -6,7 +6,9 @@ file(REMOVE_RECURSE
   "/home/rm/ros_ws/devel/share/common-lisp/ros/second_coursework/msg/RoomCheckFeedback.lisp"
   "/home/rm/ros_ws/devel/share/common-lisp/ros/second_coursework/msg/RoomCheckGoal.lisp"
   "/home/rm/ros_ws/devel/share/common-lisp/ros/second_coursework/msg/RoomCheckResult.lisp"
+  "/home/rm/ros_ws/devel/share/common-lisp/ros/second_coursework/msg/YOLODetection.lisp"
   "/home/rm/ros_ws/devel/share/common-lisp/ros/second_coursework/srv/MoveRobot.lisp"
+  "/home/rm/ros_ws/devel/share/common-lisp/ros/second_coursework/srv/YOLOLastFrame.lisp"
   "CMakeFiles/second_coursework_generate_messages_lisp"
 )
 

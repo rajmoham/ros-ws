@@ -21,4 +21,6 @@
     (:file "_package_RoomCheckGoal" :depends-on ("_package"))
     (:file "RoomCheckResult" :depends-on ("_package_RoomCheckResult"))
     (:file "_package_RoomCheckResult" :depends-on ("_package"))
+    (:file "YOLODetection" :depends-on ("_package_YOLODetection"))
+    (:file "_package_YOLODetection" :depends-on ("_package"))
   ))

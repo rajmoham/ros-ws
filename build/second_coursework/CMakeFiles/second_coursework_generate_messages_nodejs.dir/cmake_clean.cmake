@@ -6,7 +6,9 @@ file(REMOVE_RECURSE
   "/home/rm/ros_ws/devel/share/gennodejs/ros/second_coursework/msg/RoomCheckFeedback.js"
   "/home/rm/ros_ws/devel/share/gennodejs/ros/second_coursework/msg/RoomCheckGoal.js"
   "/home/rm/ros_ws/devel/share/gennodejs/ros/second_coursework/msg/RoomCheckResult.js"
+  "/home/rm/ros_ws/devel/share/gennodejs/ros/second_coursework/msg/YOLODetection.js"
   "/home/rm/ros_ws/devel/share/gennodejs/ros/second_coursework/srv/MoveRobot.js"
+  "/home/rm/ros_ws/devel/share/gennodejs/ros/second_coursework/srv/YOLOLastFrame.js"
   "CMakeFiles/second_coursework_generate_messages_nodejs"
 )
 

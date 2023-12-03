@@ -1,8 +1,8 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "second_coursework: 7 messages, 1 services")
+message(STATUS "second_coursework: 8 messages, 2 services")
 
-set(MSG_I_FLAGS "-Isecond_coursework:/home/rm/ros_ws/devel/share/second_coursework/msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Isecond_coursework:/home/rm/ros_ws/src/second_coursework/msg;-Isecond_coursework:/home/rm/ros_ws/devel/share/second_coursework/msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,24 +17,29 @@ add_custom_target(second_coursework_generate_messages ALL)
 
 
 
+get_filename_component(_filename "/home/rm/ros_ws/src/second_coursework/msg/YOLODetection.msg" NAME_WE)
+add_custom_target(_second_coursework_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "second_coursework" "/home/rm/ros_ws/src/second_coursework/msg/YOLODetection.msg" ""
+)
+
 get_filename_component(_filename "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckAction.msg" NAME_WE)
 add_custom_target(_second_coursework_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "second_coursework" "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckAction.msg" "second_coursework/RoomCheckActionResult:second_coursework/RoomCheckResult:actionlib_msgs/GoalStatus:geometry_msgs/Point:actionlib_msgs/GoalID:std_msgs/Header:second_coursework/RoomCheckActionFeedback:second_coursework/RoomCheckGoal:second_coursework/RoomCheckFeedback:second_coursework/RoomCheckActionGoal"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "second_coursework" "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckAction.msg" "std_msgs/Header:actionlib_msgs/GoalID:second_coursework/RoomCheckGoal:second_coursework/RoomCheckActionGoal:second_coursework/RoomCheckActionFeedback:second_coursework/RoomCheckFeedback:second_coursework/RoomCheckResult:geometry_msgs/Point:second_coursework/RoomCheckActionResult:actionlib_msgs/GoalStatus"
 )
 
 get_filename_component(_filename "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionGoal.msg" NAME_WE)
 add_custom_target(_second_coursework_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "second_coursework" "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionGoal.msg" "second_coursework/RoomCheckGoal:actionlib_msgs/GoalID:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "second_coursework" "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionGoal.msg" "std_msgs/Header:actionlib_msgs/GoalID:second_coursework/RoomCheckGoal"
 )
 
 get_filename_component(_filename "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionResult.msg" NAME_WE)
 add_custom_target(_second_coursework_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "second_coursework" "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionResult.msg" "actionlib_msgs/GoalStatus:actionlib_msgs/GoalID:std_msgs/Header:second_coursework/RoomCheckResult"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "second_coursework" "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionResult.msg" "std_msgs/Header:actionlib_msgs/GoalStatus:actionlib_msgs/GoalID:second_coursework/RoomCheckResult"
 )
 
 get_filename_component(_filename "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionFeedback.msg" NAME_WE)
 add_custom_target(_second_coursework_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "second_coursework" "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionFeedback.msg" "actionlib_msgs/GoalStatus:geometry_msgs/Point:actionlib_msgs/GoalID:std_msgs/Header:second_coursework/RoomCheckFeedback"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "second_coursework" "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionFeedback.msg" "std_msgs/Header:actionlib_msgs/GoalID:geometry_msgs/Point:second_coursework/RoomCheckFeedback:actionlib_msgs/GoalStatus"
 )
 
 get_filename_component(_filename "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckGoal.msg" NAME_WE)
@@ -57,6 +62,11 @@ add_custom_target(_second_coursework_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "second_coursework" "/home/rm/ros_ws/src/second_coursework/srv/MoveRobot.srv" ""
 )
 
+get_filename_component(_filename "/home/rm/ros_ws/src/second_coursework/srv/YOLOLastFrame.srv" NAME_WE)
+add_custom_target(_second_coursework_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "second_coursework" "/home/rm/ros_ws/src/second_coursework/srv/YOLOLastFrame.srv" "second_coursework/YOLODetection"
+)
+
 #
 #  langs = gencpp;geneus;genlisp;gennodejs;genpy
 #
@@ -64,27 +74,33 @@ add_custom_target(_second_coursework_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(second_coursework
+  "/home/rm/ros_ws/src/second_coursework/msg/YOLODetection.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/second_coursework
+)
+_generate_msg_cpp(second_coursework
   "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionResult.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionFeedback.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckGoal.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckFeedback.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionGoal.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckGoal.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionGoal.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionFeedback.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckFeedback.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/second_coursework
 )
 _generate_msg_cpp(second_coursework
   "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/second_coursework
 )
 _generate_msg_cpp(second_coursework
   "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckResult.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/second_coursework
 )
 _generate_msg_cpp(second_coursework
   "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckFeedback.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/second_coursework
 )
 _generate_msg_cpp(second_coursework
@@ -113,6 +129,12 @@ _generate_srv_cpp(second_coursework
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/second_coursework
 )
+_generate_srv_cpp(second_coursework
+  "/home/rm/ros_ws/src/second_coursework/srv/YOLOLastFrame.srv"
+  "${MSG_I_FLAGS}"
+  "/home/rm/ros_ws/src/second_coursework/msg/YOLODetection.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/second_coursework
+)
 
 ### Generating Module File
 _generate_module_cpp(second_coursework
@@ -126,6 +148,8 @@ add_custom_target(second_coursework_generate_messages_cpp
 add_dependencies(second_coursework_generate_messages second_coursework_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/rm/ros_ws/src/second_coursework/msg/YOLODetection.msg" NAME_WE)
+add_dependencies(second_coursework_generate_messages_cpp _second_coursework_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckAction.msg" NAME_WE)
 add_dependencies(second_coursework_generate_messages_cpp _second_coursework_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionGoal.msg" NAME_WE)
@@ -142,6 +166,8 @@ get_filename_component(_filename "/home/rm/ros_ws/devel/share/second_coursework/
 add_dependencies(second_coursework_generate_messages_cpp _second_coursework_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/rm/ros_ws/src/second_coursework/srv/MoveRobot.srv" NAME_WE)
 add_dependencies(second_coursework_generate_messages_cpp _second_coursework_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/rm/ros_ws/src/second_coursework/srv/YOLOLastFrame.srv" NAME_WE)
+add_dependencies(second_coursework_generate_messages_cpp _second_coursework_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(second_coursework_gencpp)
@@ -153,27 +179,33 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS second_coursework_generate_messages
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(second_coursework
+  "/home/rm/ros_ws/src/second_coursework/msg/YOLODetection.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/second_coursework
+)
+_generate_msg_eus(second_coursework
   "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionResult.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionFeedback.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckGoal.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckFeedback.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionGoal.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckGoal.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionGoal.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionFeedback.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckFeedback.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/second_coursework
 )
 _generate_msg_eus(second_coursework
   "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/second_coursework
 )
 _generate_msg_eus(second_coursework
   "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckResult.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/second_coursework
 )
 _generate_msg_eus(second_coursework
   "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckFeedback.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/second_coursework
 )
 _generate_msg_eus(second_coursework
@@ -202,6 +234,12 @@ _generate_srv_eus(second_coursework
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/second_coursework
 )
+_generate_srv_eus(second_coursework
+  "/home/rm/ros_ws/src/second_coursework/srv/YOLOLastFrame.srv"
+  "${MSG_I_FLAGS}"
+  "/home/rm/ros_ws/src/second_coursework/msg/YOLODetection.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/second_coursework
+)
 
 ### Generating Module File
 _generate_module_eus(second_coursework
@@ -215,6 +253,8 @@ add_custom_target(second_coursework_generate_messages_eus
 add_dependencies(second_coursework_generate_messages second_coursework_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/rm/ros_ws/src/second_coursework/msg/YOLODetection.msg" NAME_WE)
+add_dependencies(second_coursework_generate_messages_eus _second_coursework_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckAction.msg" NAME_WE)
 add_dependencies(second_coursework_generate_messages_eus _second_coursework_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionGoal.msg" NAME_WE)
@@ -231,6 +271,8 @@ get_filename_component(_filename "/home/rm/ros_ws/devel/share/second_coursework/
 add_dependencies(second_coursework_generate_messages_eus _second_coursework_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/rm/ros_ws/src/second_coursework/srv/MoveRobot.srv" NAME_WE)
 add_dependencies(second_coursework_generate_messages_eus _second_coursework_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/rm/ros_ws/src/second_coursework/srv/YOLOLastFrame.srv" NAME_WE)
+add_dependencies(second_coursework_generate_messages_eus _second_coursework_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(second_coursework_geneus)
@@ -242,27 +284,33 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS second_coursework_generate_messages
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(second_coursework
+  "/home/rm/ros_ws/src/second_coursework/msg/YOLODetection.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/second_coursework
+)
+_generate_msg_lisp(second_coursework
   "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionResult.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionFeedback.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckGoal.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckFeedback.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionGoal.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckGoal.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionGoal.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionFeedback.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckFeedback.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/second_coursework
 )
 _generate_msg_lisp(second_coursework
   "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/second_coursework
 )
 _generate_msg_lisp(second_coursework
   "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckResult.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/second_coursework
 )
 _generate_msg_lisp(second_coursework
   "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckFeedback.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/second_coursework
 )
 _generate_msg_lisp(second_coursework
@@ -291,6 +339,12 @@ _generate_srv_lisp(second_coursework
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/second_coursework
 )
+_generate_srv_lisp(second_coursework
+  "/home/rm/ros_ws/src/second_coursework/srv/YOLOLastFrame.srv"
+  "${MSG_I_FLAGS}"
+  "/home/rm/ros_ws/src/second_coursework/msg/YOLODetection.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/second_coursework
+)
 
 ### Generating Module File
 _generate_module_lisp(second_coursework
@@ -304,6 +358,8 @@ add_custom_target(second_coursework_generate_messages_lisp
 add_dependencies(second_coursework_generate_messages second_coursework_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/rm/ros_ws/src/second_coursework/msg/YOLODetection.msg" NAME_WE)
+add_dependencies(second_coursework_generate_messages_lisp _second_coursework_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckAction.msg" NAME_WE)
 add_dependencies(second_coursework_generate_messages_lisp _second_coursework_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionGoal.msg" NAME_WE)
@@ -320,6 +376,8 @@ get_filename_component(_filename "/home/rm/ros_ws/devel/share/second_coursework/
 add_dependencies(second_coursework_generate_messages_lisp _second_coursework_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/rm/ros_ws/src/second_coursework/srv/MoveRobot.srv" NAME_WE)
 add_dependencies(second_coursework_generate_messages_lisp _second_coursework_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/rm/ros_ws/src/second_coursework/srv/YOLOLastFrame.srv" NAME_WE)
+add_dependencies(second_coursework_generate_messages_lisp _second_coursework_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(second_coursework_genlisp)
@@ -331,27 +389,33 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS second_coursework_generate_messages
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(second_coursework
+  "/home/rm/ros_ws/src/second_coursework/msg/YOLODetection.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/second_coursework
+)
+_generate_msg_nodejs(second_coursework
   "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionResult.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionFeedback.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckGoal.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckFeedback.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionGoal.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckGoal.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionGoal.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionFeedback.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckFeedback.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/second_coursework
 )
 _generate_msg_nodejs(second_coursework
   "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/second_coursework
 )
 _generate_msg_nodejs(second_coursework
   "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckResult.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/second_coursework
 )
 _generate_msg_nodejs(second_coursework
   "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckFeedback.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/second_coursework
 )
 _generate_msg_nodejs(second_coursework
@@ -380,6 +444,12 @@ _generate_srv_nodejs(second_coursework
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/second_coursework
 )
+_generate_srv_nodejs(second_coursework
+  "/home/rm/ros_ws/src/second_coursework/srv/YOLOLastFrame.srv"
+  "${MSG_I_FLAGS}"
+  "/home/rm/ros_ws/src/second_coursework/msg/YOLODetection.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/second_coursework
+)
 
 ### Generating Module File
 _generate_module_nodejs(second_coursework
@@ -393,6 +463,8 @@ add_custom_target(second_coursework_generate_messages_nodejs
 add_dependencies(second_coursework_generate_messages second_coursework_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/rm/ros_ws/src/second_coursework/msg/YOLODetection.msg" NAME_WE)
+add_dependencies(second_coursework_generate_messages_nodejs _second_coursework_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckAction.msg" NAME_WE)
 add_dependencies(second_coursework_generate_messages_nodejs _second_coursework_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionGoal.msg" NAME_WE)
@@ -409,6 +481,8 @@ get_filename_component(_filename "/home/rm/ros_ws/devel/share/second_coursework/
 add_dependencies(second_coursework_generate_messages_nodejs _second_coursework_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/rm/ros_ws/src/second_coursework/srv/MoveRobot.srv" NAME_WE)
 add_dependencies(second_coursework_generate_messages_nodejs _second_coursework_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/rm/ros_ws/src/second_coursework/srv/YOLOLastFrame.srv" NAME_WE)
+add_dependencies(second_coursework_generate_messages_nodejs _second_coursework_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(second_coursework_gennodejs)
@@ -420,27 +494,33 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS second_coursework_generate_messages
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(second_coursework
+  "/home/rm/ros_ws/src/second_coursework/msg/YOLODetection.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/second_coursework
+)
+_generate_msg_py(second_coursework
   "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionResult.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionFeedback.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckGoal.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckFeedback.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionGoal.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckGoal.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionGoal.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionFeedback.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckFeedback.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/second_coursework
 )
 _generate_msg_py(second_coursework
   "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/second_coursework
 )
 _generate_msg_py(second_coursework
   "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckResult.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/second_coursework
 )
 _generate_msg_py(second_coursework
   "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckFeedback.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/second_coursework
 )
 _generate_msg_py(second_coursework
@@ -469,6 +549,12 @@ _generate_srv_py(second_coursework
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/second_coursework
 )
+_generate_srv_py(second_coursework
+  "/home/rm/ros_ws/src/second_coursework/srv/YOLOLastFrame.srv"
+  "${MSG_I_FLAGS}"
+  "/home/rm/ros_ws/src/second_coursework/msg/YOLODetection.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/second_coursework
+)
 
 ### Generating Module File
 _generate_module_py(second_coursework
@@ -482,6 +568,8 @@ add_custom_target(second_coursework_generate_messages_py
 add_dependencies(second_coursework_generate_messages second_coursework_generate_messages_py)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/rm/ros_ws/src/second_coursework/msg/YOLODetection.msg" NAME_WE)
+add_dependencies(second_coursework_generate_messages_py _second_coursework_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckAction.msg" NAME_WE)
 add_dependencies(second_coursework_generate_messages_py _second_coursework_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckActionGoal.msg" NAME_WE)
@@ -497,6 +585,8 @@ add_dependencies(second_coursework_generate_messages_py _second_coursework_gener
 get_filename_component(_filename "/home/rm/ros_ws/devel/share/second_coursework/msg/RoomCheckFeedback.msg" NAME_WE)
 add_dependencies(second_coursework_generate_messages_py _second_coursework_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/rm/ros_ws/src/second_coursework/srv/MoveRobot.srv" NAME_WE)
+add_dependencies(second_coursework_generate_messages_py _second_coursework_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/rm/ros_ws/src/second_coursework/srv/YOLOLastFrame.srv" NAME_WE)
 add_dependencies(second_coursework_generate_messages_py _second_coursework_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

@@ -753,43 +753,17 @@ _second_coursework_generate_messages_check_deps_RoomCheckGoal/fast:
 .PHONY : _second_coursework_generate_messages_check_deps_RoomCheckGoal/fast
 
 #=============================================================================
-# Target rules for targets named _second_coursework_generate_messages_check_deps_RoomCheckActionGoal
+# Target rules for targets named _second_coursework_generate_messages_check_deps_YOLODetection
 
 # Build rule for target.
-_second_coursework_generate_messages_check_deps_RoomCheckActionGoal: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _second_coursework_generate_messages_check_deps_RoomCheckActionGoal
-.PHONY : _second_coursework_generate_messages_check_deps_RoomCheckActionGoal
+_second_coursework_generate_messages_check_deps_YOLODetection: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _second_coursework_generate_messages_check_deps_YOLODetection
+.PHONY : _second_coursework_generate_messages_check_deps_YOLODetection
 
 # fast build rule for target.
-_second_coursework_generate_messages_check_deps_RoomCheckActionGoal/fast:
-	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/build
-.PHONY : _second_coursework_generate_messages_check_deps_RoomCheckActionGoal/fast
-
-#=============================================================================
-# Target rules for targets named _second_coursework_generate_messages_check_deps_RoomCheckFeedback
-
-# Build rule for target.
-_second_coursework_generate_messages_check_deps_RoomCheckFeedback: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _second_coursework_generate_messages_check_deps_RoomCheckFeedback
-.PHONY : _second_coursework_generate_messages_check_deps_RoomCheckFeedback
-
-# fast build rule for target.
-_second_coursework_generate_messages_check_deps_RoomCheckFeedback/fast:
-	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/build
-.PHONY : _second_coursework_generate_messages_check_deps_RoomCheckFeedback/fast
-
-#=============================================================================
-# Target rules for targets named second_coursework_gencpp
-
-# Build rule for target.
-second_coursework_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 second_coursework_gencpp
-.PHONY : second_coursework_gencpp
-
-# fast build rule for target.
-second_coursework_gencpp/fast:
-	$(MAKE) -f second_coursework/CMakeFiles/second_coursework_gencpp.dir/build.make second_coursework/CMakeFiles/second_coursework_gencpp.dir/build
-.PHONY : second_coursework_gencpp/fast
+_second_coursework_generate_messages_check_deps_YOLODetection/fast:
+	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLODetection.dir/build
+.PHONY : _second_coursework_generate_messages_check_deps_YOLODetection/fast
 
 #=============================================================================
 # Target rules for targets named _second_coursework_generate_messages_check_deps_RoomCheckAction
@@ -933,6 +907,58 @@ second_coursework_generate_messages_py: cmake_check_build_system
 second_coursework_generate_messages_py/fast:
 	$(MAKE) -f second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/build.make second_coursework/CMakeFiles/second_coursework_generate_messages_py.dir/build
 .PHONY : second_coursework_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named _second_coursework_generate_messages_check_deps_RoomCheckFeedback
+
+# Build rule for target.
+_second_coursework_generate_messages_check_deps_RoomCheckFeedback: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _second_coursework_generate_messages_check_deps_RoomCheckFeedback
+.PHONY : _second_coursework_generate_messages_check_deps_RoomCheckFeedback
+
+# fast build rule for target.
+_second_coursework_generate_messages_check_deps_RoomCheckFeedback/fast:
+	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckFeedback.dir/build
+.PHONY : _second_coursework_generate_messages_check_deps_RoomCheckFeedback/fast
+
+#=============================================================================
+# Target rules for targets named second_coursework_gencpp
+
+# Build rule for target.
+second_coursework_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 second_coursework_gencpp
+.PHONY : second_coursework_gencpp
+
+# fast build rule for target.
+second_coursework_gencpp/fast:
+	$(MAKE) -f second_coursework/CMakeFiles/second_coursework_gencpp.dir/build.make second_coursework/CMakeFiles/second_coursework_gencpp.dir/build
+.PHONY : second_coursework_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named _second_coursework_generate_messages_check_deps_RoomCheckActionGoal
+
+# Build rule for target.
+_second_coursework_generate_messages_check_deps_RoomCheckActionGoal: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _second_coursework_generate_messages_check_deps_RoomCheckActionGoal
+.PHONY : _second_coursework_generate_messages_check_deps_RoomCheckActionGoal
+
+# fast build rule for target.
+_second_coursework_generate_messages_check_deps_RoomCheckActionGoal/fast:
+	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_RoomCheckActionGoal.dir/build
+.PHONY : _second_coursework_generate_messages_check_deps_RoomCheckActionGoal/fast
+
+#=============================================================================
+# Target rules for targets named _second_coursework_generate_messages_check_deps_YOLOLastFrame
+
+# Build rule for target.
+_second_coursework_generate_messages_check_deps_YOLOLastFrame: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _second_coursework_generate_messages_check_deps_YOLOLastFrame
+.PHONY : _second_coursework_generate_messages_check_deps_YOLOLastFrame
+
+# fast build rule for target.
+_second_coursework_generate_messages_check_deps_YOLOLastFrame/fast:
+	$(MAKE) -f second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/build.make second_coursework/CMakeFiles/_second_coursework_generate_messages_check_deps_YOLOLastFrame.dir/build
+.PHONY : _second_coursework_generate_messages_check_deps_YOLOLastFrame/fast
 
 #=============================================================================
 # Target rules for targets named second_coursework_geneus
@@ -1109,9 +1135,7 @@ help:
 	@echo "... my_msgs_gennodejs"
 	@echo "... my_msgs_genpy"
 	@echo "... _second_coursework_generate_messages_check_deps_RoomCheckGoal"
-	@echo "... _second_coursework_generate_messages_check_deps_RoomCheckActionGoal"
-	@echo "... _second_coursework_generate_messages_check_deps_RoomCheckFeedback"
-	@echo "... second_coursework_gencpp"
+	@echo "... _second_coursework_generate_messages_check_deps_YOLODetection"
 	@echo "... _second_coursework_generate_messages_check_deps_RoomCheckAction"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... actionlib_msgs_generate_messages_lisp"
@@ -1123,6 +1147,10 @@ help:
 	@echo "... second_coursework_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... second_coursework_generate_messages_py"
+	@echo "... _second_coursework_generate_messages_check_deps_RoomCheckFeedback"
+	@echo "... second_coursework_gencpp"
+	@echo "... _second_coursework_generate_messages_check_deps_RoomCheckActionGoal"
+	@echo "... _second_coursework_generate_messages_check_deps_YOLOLastFrame"
 	@echo "... second_coursework_geneus"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... second_coursework_generate_messages_nodejs"

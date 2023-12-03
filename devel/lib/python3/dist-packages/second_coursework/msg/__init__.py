@@ -5,3 +5,4 @@ from ._RoomCheckActionResult import *
 from ._RoomCheckFeedback import *
 from ._RoomCheckGoal import *
 from ._RoomCheckResult import *
+from ._YOLODetection import *

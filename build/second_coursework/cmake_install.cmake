@@ -38,7 +38,14 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/second_coursework/srv" TYPE FILE FILES "/home/rm/ros_ws/src/second_coursework/srv/MoveRobot.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/second_coursework/msg" TYPE FILE FILES "/home/rm/ros_ws/src/second_coursework/msg/YOLODetection.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/second_coursework/srv" TYPE FILE FILES
+    "/home/rm/ros_ws/src/second_coursework/srv/MoveRobot.srv"
+    "/home/rm/ros_ws/src/second_coursework/srv/YOLOLastFrame.srv"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
