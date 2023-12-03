@@ -1,0 +1,9 @@
+# Define goal
+int32 num_of_checks
+---
+#Define result
+int32[] rule_break_count
+---
+# Define feedback
+geometry_msgs/Point pos
+int32 broken_rule

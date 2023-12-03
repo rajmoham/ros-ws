@@ -1,0 +1,8 @@
+prefix=/home/rm/ros_ws/devel
+
+Name: turtle_nav
+Description: Description of turtle_nav
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

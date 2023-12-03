@@ -1,0 +1,8 @@
+prefix=/home/rm/ros_ws/devel
+
+Name: tutorial_camera
+Description: Description of tutorial_camera
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

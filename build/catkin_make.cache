@@ -1,0 +1,2 @@
+archives/first_coursework:archives/hello_world:archives/my_msgs:archives/turtle_nav:archives/tutorial_camera:second_coursework
+-DCATKIN_DEVEL_PREFIX=/home/rm/ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/rm/ros_ws/install -G Unix Makefiles

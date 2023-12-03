@@ -1,0 +1,8 @@
+prefix=/home/rm/ros_ws/install
+
+Name: second_coursework
+Description: Description of second_coursework
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: actionlib_msgs geometry_msgs rospy std_msgs

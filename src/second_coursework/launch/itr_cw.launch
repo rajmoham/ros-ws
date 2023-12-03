@@ -1,0 +1,10 @@
+<launch>
+<arg name="ncounts" default="2" />
+<param name="ncounts" value="$(arg ncounts)" />
+<include file="$(find rosplan_stage_demo)/launch/empty_stage_single_robot.launch" />
+<node pkg="second_coursework" type="main.py" name="main" output="screen"/>
+<node pkg="second_coursework" type="move_robot.py" name="move_robot" />
+<node pkg="second_coursework" type="room_check_server.py" name="room_check" />
+<arg name="vid_folder" default="/home/rm/Videos/cw_videos"/>
+<node pkg="second_coursework" type="itr_cw_video.pyc" args="$(arg vid_folder)" name="itr_cw_video" output="screen" />
+</launch>
